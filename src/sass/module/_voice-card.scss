@@ -7,7 +7,11 @@
     @include mq("md") {
         width: rem(520);
     }
+}
 
+.voice-card a:hover {
+    opacity: 0.6;
+    transition: 0.3s;
 }
 
 .voice-card__upper {
