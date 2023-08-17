@@ -1,0 +1,12 @@
+
+@use "global" as *;
+
+.about-layout {
+    margin-top: rem(80);
+    @include mq("md") {
+        margin-top: rem(140);
+        // max-width: rem(1100);
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

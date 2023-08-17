@@ -1,0 +1,92 @@
+@use "global" as *;
+
+.swiper {
+    height: 100vh;
+    min-height: rem(667);
+}
+
+.swiper-wrapper {
+    height: inherit;
+    // min-height: rem(858);//これ消したい
+}
+
+.swiper-slide {
+    // height: inherit;
+    // min-height: rem(858);
+
+}
+
+.swiper-slide picture {
+    height: inherit;
+    min-height: rem(858);
+
+}
+
+.swiper-slide img {
+    height: inherit;
+    min-height: inherit;
+}
+
+
+
+.swiper-button-prev::after {
+    width: rem(80);
+    height: rem(80);
+    background: url(/assets/images/common/swiper-prev.png);
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.swiper-button-prev,.swiper-button-next{
+    color: transparent;
+    width: rem(80);
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    @include mq("md") {
+        right: -9px;
+        left: auto;
+    }
+}
+
+.swiper-button-next::after {
+    width: rem(80);
+    height: rem(80);
+    background: url(/assets/images/common/swiper-next.png);
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+
+    @include mq("lg") {
+        right: -9px;
+        left: auto;
+    }
+}
+
+
+
+
+// .swiper-button-prev,
+// .swiper-button-next {
+// 	width: 48px; /* ボタンの幅 */
+// 	height: 48px; /* ボタンの高さ */
+// 	background-size: 48px 48px; /* 背景画像としてのサイズ（＝表示したい画像サイズ） */
+// 	margin-top: -24px; /* 縦中央配置用：ボタンの高さの半分のネガティブマージン（top:50%がすでに設定されている） */
+// }
+
+// .swiper-button-prev:before {
+// 	// font-family: "Font Awesome 5 Free";
+// 	content: "\f100"; /* angle-double-leftのUnicode */
+// 	font-size: 48px;
+// 	color: #ffefd5;
+// }

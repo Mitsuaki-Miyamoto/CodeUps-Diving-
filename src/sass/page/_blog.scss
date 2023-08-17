@@ -1,0 +1,96 @@
+@use "global" as *;
+
+.blog {
+    
+    @include mq("md") {
+        background: url(/assets/images/common/blog-bg999.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top center;
+    }
+}
+
+.blog__inner {
+    
+
+}
+
+.blog__bg {
+}
+
+.blog__header.section-header {
+
+    @include mq("md") {
+        color: $white;
+        
+    }
+}
+
+.blog__header.section-header::first-letter {
+    @include mq("md") {
+        color: $white;
+    }
+}
+
+
+.blog__sub.section-header__sub {
+    @include mq("md") {
+        color: $white;
+    }
+}
+
+
+.blog__cards {
+    margin-top: rem(29);
+    @include mq("md") {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: rem(80);
+    }
+}
+
+.blog__card {
+    background: $white;
+    margin-right: auto;
+    margin-left: auto;
+    @include mq("md") {
+        max-width: calc(33.333% - 40px * 2 / 3);
+        width: 100%;
+        display: block;
+    }
+}
+
+.blog-card+.blog-card {
+    @include mq("md") {
+        margin-left: rem(40);
+    }
+}
+
+.blog__card.blog-card:nth-of-type(3n+1) {
+    @include mq("md") {
+        margin-left: 0;
+    }
+}
+
+.blog__card.blog-card:nth-of-type(n+4) {
+    @include mq("md") {
+        margin-top: 34px;
+    }
+}
+
+
+.blog__card:not(:first-child) {
+    margin-top: rem(40);
+
+    @include mq("md") {
+        margin-top: 0;
+    }
+
+}
+
+.blog-card__body {}
+
+.blog__button {
+    text-align: center;
+    margin-top: rem(80);
+}
