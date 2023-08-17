@@ -31,9 +31,9 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     effect: "fade",
     speed: 3000,
     allowTouchMove: false,
-    // autoplay: {
-    //   delay: 3000,
-    // },
+    autoplay: {
+      delay: 3000,
+    },
   });
 
   //Campaignスライダー
