@@ -16,7 +16,7 @@
     background-color: $white;
     transition: color 0.4s ease-out;
     transition: 0.3s;
-  }
+}
 
 .header__inner {
     width: 100%;
@@ -30,6 +30,7 @@
     // margin-right: auto;
     height: inherit;
     width: rem(102);
+
     @include mq("md") {
         width: rem(133);
     }
@@ -53,7 +54,7 @@
 }
 
 .header-nav__item {
-    position:relative;
+    position: relative;
     font-size: rem(18);
     font-weight: $regular;
     font-family: $english-font-family;
@@ -67,7 +68,7 @@
 .header-nav__item--faq {
     text-transform: uppercase;
 }
- 
+
 .header-nav__item a {
     padding-left: rem(20.5);
     padding-right: rem(20.5);
@@ -78,20 +79,24 @@
 }
 
 .header-nav__item a::after {
-        position: absolute;
-        left: 0;
-        content:"";
-        width: 100%;
-        height: rem(1);
-        background: $white;
-        bottom: rem(10);               /*アンダーラインがaタグの下端から現れる*/
-        transform: scale(0, 1);     /*アンダーラインの縮尺比率。ホバー前はx方向に0*/
-        transform-origin: 68px -61px; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の左端*/
-        transition: transform 0.3s; /*変形の時間*/
-        }
-        
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: rem(1);
+    background: $white;
+    bottom: rem(10);
+    /*アンダーラインがaタグの下端から現れる*/
+    transform: scale(0, 1);
+    /*アンダーラインの縮尺比率。ホバー前はx方向に0*/
+    transform-origin: 68px -61px;
+    /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の左端*/
+    transition: transform 0.3s;
+    /*変形の時間*/
+}
+
 .header-nav__item a:hover:after {
-    transform: scale(0.9, 0.9); 
+    transform: scale(0.9, 0.9);
 
 }
 
@@ -157,10 +162,8 @@
 
 .header__hamburger.is-active span:first-child {
     top: rem(13);
-    // transform: rotate(45deg);
     background-color: $white;
-    // rotate:(45deg);
-  transform: translateY(20px) rotate(39deg);
+    transform: translateY(20px) rotate(39deg);
 }
 
 .header__hamburger.is-active span:nth-child(2) {
@@ -169,8 +172,6 @@
 
 .header__hamburger.is-active span:nth-child(3) {
     top: rem(53);
-    // transform: rotate(-45deg);
     background-color: $white;
-    // rotate:(-45deg);
-  transform: translateY(-20px) rotate(-39deg);
+    transform: translateY(-20px) rotate(-39deg);
 }

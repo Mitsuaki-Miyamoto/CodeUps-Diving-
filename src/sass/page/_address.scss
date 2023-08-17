@@ -6,8 +6,6 @@
 }
 
 .address__logo {
-    // border-bottom: 1px solid $green;
-    // padding-bottom: 2px;
     display: block;
 }
 
@@ -26,8 +24,6 @@
 
     @include mq("md") {
         display: flex;
-        // padding-top: rem(20);
-        // padding-left: rem(26);
         border-top: 1px solid $green;
         margin-right: rem(37);
         margin-left: rem(37);

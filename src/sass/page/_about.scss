@@ -131,7 +131,6 @@
         padding-top: rem(145);
         align-items: center;
         justify-content: center;
-        // text-align: center;
     }
 }
 
@@ -188,49 +187,3 @@
 .about__button {
     margin-top: rem(17);
 }
-
-
-// .about__image1 {
-//     background-image: url(/assets/images/common/about-us1.jpg);
-//     background-position: center;
-//     background-repeat: no-repeat, no-repeat;
-//     background-size: contain;
-//     margin-top: 8.75rem;
-//     margin-top: 3.125rem;
-//     padding-top: 66.19217%;
-//     margin-left: 59px;
-//     // position: relative;
-
-//     @include mq("md") {
-//         margin-left: 159px;
-//     }
-// }
-
-
-// .about__image2 {
-//     background-image: url(/assets/images/common/about-us.jpg);
-//     background-position: 14%;
-//     background-repeat: no-repeat, no-repeat;
-//     background-size: 41%;
-//     left: 53px;
-//     top: -20px;
-//     margin-top: rem(20);
-//     padding-top: 65.979381443%;
-//     position: absolute;
-
-//     @include mq("md") {
-//         background-position: 5%;
-//         top: -20px;
-//         left: -223px;
-//         background-size: 44%;
-//         width: 606px;
-//     }
-// }
-
-// .about__image3 {
-//     background: url(/assets/images/common/about-us3.png);
-//     background-position: right rem(2);
-//     background-repeat: no-repeat;
-//     background-size: contain;
-//     height: rem(180);
-// }

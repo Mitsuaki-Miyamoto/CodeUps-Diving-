@@ -10,7 +10,6 @@
     width: 100%;
     height: 100vh;
     background-color: $green;
-    // transition: opacity .6s ease, visibility .6s ease;
     overflow-y: scroll;
     color: $white;
 }
@@ -41,7 +40,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // max-width: rem(253);
     margin-left: auto;
     margin-right: auto;
     
@@ -67,15 +65,13 @@
 }
 
 .drawer-menu__item:not(:first-child) {
-    // margin-top: 50px;
+   
 }
 
 
 .drawer-menu__item a {
     display: block;
     line-height: 112.5%;
-    // text-align: center;
-    // width: 100%;
 }
 
 .drawer-menu__head {
@@ -104,7 +100,6 @@
     color: $white;
     font-weight: $regular;
     line-height: 1.1;
-    // font-weight: $medium;
 }
 
 

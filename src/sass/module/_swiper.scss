@@ -7,12 +7,11 @@
 
 .swiper-wrapper {
     height: inherit;
-    // min-height: rem(858);//これ消したい
+    
 }
 
 .swiper-slide {
-    // height: inherit;
-    // min-height: rem(858);
+   
 
 }
 
@@ -72,21 +71,3 @@
         left: auto;
     }
 }
-
-
-
-
-// .swiper-button-prev,
-// .swiper-button-next {
-// 	width: 48px; /* ボタンの幅 */
-// 	height: 48px; /* ボタンの高さ */
-// 	background-size: 48px 48px; /* 背景画像としてのサイズ（＝表示したい画像サイズ） */
-// 	margin-top: -24px; /* 縦中央配置用：ボタンの高さの半分のネガティブマージン（top:50%がすでに設定されている） */
-// }
-
-// .swiper-button-prev:before {
-// 	// font-family: "Font Awesome 5 Free";
-// 	content: "\f100"; /* angle-double-leftのUnicode */
-// 	font-size: 48px;
-// 	color: #ffefd5;
-// }
