@@ -1,0 +1,73 @@
+@use "global" as *;
+
+.swiper {
+    height: 100vh;
+    min-height: rem(667);
+}
+
+.swiper-wrapper {
+    height: inherit;
+    
+}
+
+.swiper-slide {
+   
+
+}
+
+.swiper-slide picture {
+    height: inherit;
+    min-height: rem(858);
+
+}
+
+.swiper-slide img {
+    height: inherit;
+    min-height: inherit;
+}
+
+
+
+.swiper-button-prev::after {
+    width: rem(80);
+    height: rem(80);
+    background: url(/assets/images/common/swiper-prev.png);
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.swiper-button-prev,.swiper-button-next{
+    color: transparent;
+    width: rem(80);
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    @include mq("md") {
+        right: -9px;
+        left: auto;
+    }
+}
+
+.swiper-button-next::after {
+    width: rem(80);
+    height: rem(80);
+    background: url(/assets/images/common/swiper-next.png);
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+
+    @include mq("lg") {
+        right: -9px;
+        left: auto;
+    }
+}

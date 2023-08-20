@@ -1,0 +1,92 @@
+@use "global" as *;
+
+.footer-nav {
+    
+
+}
+
+.footer-nav__items {
+    display: flex;
+    flex-flow: column wrap;
+    flex-grow: 1; /* 残りのスペースを均等に分配 */
+    align-items: stretch; /* 要素の高さを親要素に合わせる */
+    height: rem(458);
+    margin-top: rem(40);
+    @include mq("md") {
+        height: rem(200);
+        margin-top: rem(22);
+    }
+}
+
+.footer-nav__item {
+    margin-top: rem(38);
+    margin-left: rem(20);
+    @include mq("md") {
+        margin-top: rem(0);
+    }
+}
+
+
+
+.footer-nav__item:first-child {
+    margin-top: 0;
+    @include mq("md") {
+       
+    }
+}
+
+.footer-nav__item li {
+    font-weight: $regular;
+}
+
+.footer-nav__head {
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: 1.12;
+    position: relative;
+    color: $white;
+}
+
+.footer-nav__head:not(:first-child) {
+    margin-top: rem(40);
+}
+
+.footer-nav__head::before {
+    content: url(/assets/images/common/star-fish.png);
+    transform: scale(0.5);
+    top:rem(-1);
+    left:rem(-29);
+    width: rem(20);
+    height: rem(20);
+    display: block;
+    position: absolute;
+}
+
+.footer-nav__item:nth-child(5) {
+    margin-top: 0px;
+}
+
+
+
+/* 5つ目以降の .footer-nav__head 要素に margin-left を適用 */
+.footer-nav__item {
+    margin-left: 20px;
+}
+.footer-nav__head:nth-child(n+5) {
+    margin-left: 26px;
+}
+
+.footer-nav__head ul li a {
+    margin-left: 20px;
+}
+
+.footer-nav__item a {}
+
+.footer-nav__list {
+    margin-top: rem(15);
+
+    @include mq("md") {
+        margin-top: rem(18);
+    }
+}
+

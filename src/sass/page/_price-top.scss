@@ -1,0 +1,153 @@
+@use "global" as *;
+
+.price-top {
+    background-color: $green-bg;
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+
+    @include mq("md") {
+        padding-top: rem(100);
+        background: $green-bg url("/assets/images/common/price-bg.png");
+        background-position: 10% 97%;
+        background-repeat: no-repeat;
+        background-size: 30% 18%;
+    }
+}
+
+.price-top__inner {}
+
+.price-top__wrapper {
+    margin-top: rem(30);
+    width: 100%;
+
+    @include mq("md") {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: rem(13);
+        width: 100%;
+    }
+}
+
+.price-top__test {
+    margin-left: rem(93);
+    margin-top: rem(30);
+}
+
+.price-top__testsp img {
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+
+.price-top__image {
+    margin-top: rem(24);
+    overflow: hidden;
+    width: 100%;
+
+    @include mq("md") {
+        margin-left: rem(90);
+    }
+}
+
+
+.price-top__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.price-top__body {
+    width: 100%;
+    color: $green-text;
+}
+
+.price-top__body dl {
+    padding-top: rem(7);
+    width: 100%;
+}
+
+.price-top__license {
+    width: 100%;
+}
+
+.price-top__wrap {}
+
+.price-top__category {
+    font-size: rem(16);
+    font-weight: $bold;
+    border-bottom: 1px solid $green;
+    padding-bottom: rem(2);
+    line-height: 1.5;
+    text-align: left;
+    margin-top: rem(40);
+    display: block;
+
+    @include mq("md") {
+        margin-top: rem(51);
+    }
+}
+
+.price-top__category:first-child {
+    margin-top: rem(40);
+    @include mq("md") {
+        margin-top: rem(25);
+    }
+}
+
+.price__price-top__category th {
+    margin-top: 40px;
+}
+
+.price-top__head {
+    font-size: rem(14);
+    font-weight: $regular;
+    line-height: 1.71429;
+    text-align: left;
+    max-width: rem(253);
+    width: 73.4666666667%;
+    display: inline-block;
+    margin-top: rem(6);
+
+    @include mq("md") {
+        font-size: rem(16);
+        max-width: rem(300);
+        line-height: 1.5;
+    }
+}
+
+// .price-top__head:first-child {
+
+// }
+
+.price-top__price {
+    font-size: rem(14);
+    font-weight: $regular;
+    line-height: 1.71429;
+    text-align: right;
+    width: 24.6666666667%;
+    display: inline-block;
+
+    @include mq("md") {
+        font-size: rem(16);
+        width: 34%;
+        display: inline-block;
+    }
+}
+
+.price__button {
+    text-align: center;
+    margin-top: rem(40);
+
+    @include mq("md") {
+        margin-top: rem(78);
+    }
+}
+
+table.price-top__category {
+    width: 100%;
+    display: block;
+}
+
+table {
+    width: 100%;
+}

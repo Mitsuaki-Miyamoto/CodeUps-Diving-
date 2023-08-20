@@ -1,0 +1,62 @@
+@use "global" as *;
+
+.campaign {
+    position: relative;
+    margin-top: rem(43);
+
+    @include mq("md") {
+        margin-top: rem(110);
+    }
+
+}
+
+.campaign__inner {
+    margin: auto;
+}
+
+.campaign__body {
+    margin-top: rem(25);
+    overflow: hidden;
+    padding-bottom: rem(7);
+    margin-right: calc(50% - 50vw);
+
+    @include mq("md") {
+        margin-top: rem(39);
+    }
+}
+
+.campaign__cards {}
+
+.campaign__card {}
+
+.campaign__card:not(:first-child) {
+    margin-left: rem(24);
+
+    @include mq("md") {
+        margin-left: rem(40);
+    }
+
+}
+
+.campaign-card__image img {}
+
+.campaign__swiper-buttons {
+    max-width: rem(300);
+    position: absolute;
+    width: 240px;
+    top: rem(11);
+    right: 189px;
+    height: 80px;
+    @include mq("md") {
+        right: rem(190);
+    }
+}
+
+.campaign__button {
+    text-align: center;
+    margin-top: rem(30);
+
+    @include mq("md") {
+        margin-top: rem(71);
+    }
+}

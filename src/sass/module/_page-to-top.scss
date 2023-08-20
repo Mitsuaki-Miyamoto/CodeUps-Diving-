@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.page-to-top {
+    position: fixed;
+    z-index: 9000;
+    right: rem(13);
+    bottom: 20px;
+    cursor: pointer;
+    color: transparent;
+    width: rem(48);
+    height: rem(48);
+    @include mq("md") {
+      width: rem(80);
+      height: rem(80);
+    }
+  }
+  
+  .page-to-top::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: rem(48);
+    height: rem(48);
+    content: "";
+    background: url(/assets/images/common/swiper-next.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+    @include mq("md") {
+      width: rem(80);
+      height: rem(80);
+    }
+  }
