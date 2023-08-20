@@ -45,12 +45,12 @@
 
 .button:hover::after {
     transform: scale(1, 1);
-   
+
 }
 
 
 .button span::before {
-    background-image: url(/assets/images/common/arrow-arrow.png);
+    background-image: url(/assets/images/common/button-arrow.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -81,6 +81,6 @@
     width: 2.5rem;
 }
 
-.button:hover{
+.button:hover {
     color: $green;
 }
