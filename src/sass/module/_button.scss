@@ -1,5 +1,7 @@
 @use "global" as *;
 
+
+// ここからテスト
 .button {
     background-color: #408F95;
     border: solid 1px #408F95;
@@ -45,12 +47,12 @@
 
 .button:hover::after {
     transform: scale(1, 1);
-
+   
 }
 
 
 .button span::before {
-    background-image: url(/assets/images/common/button-arrow.png);
+    background-image: url(/assets/images/common/arrow.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -66,7 +68,7 @@
 }
 
 .button span::after {
-    background-image: url(/assets/images/common/button-active.png);
+    background-image: url(/assets/images/common/arrow-active.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -81,6 +83,6 @@
     width: 2.5rem;
 }
 
-.button:hover {
+.button:hover{
     color: $green;
 }
